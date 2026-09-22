@@ -1,0 +1,97 @@
+.products-intro {
+  background: var(--color-sage-200);
+  padding-block: var(--space-5);
+}
+
+.products-intro__inner {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+/* --- Columna izquierda: foto del frasco + botón --- */
+
+.products-intro__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.products-intro__photo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 190px;
+}
+
+.products-intro__blob {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--color-lavender-500);
+  opacity: 0.45;
+}
+
+.products-intro__photo {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  filter: drop-shadow(0 14px 22px rgba(22, 53, 43, 0.2));
+}
+
+.products-intro__cta {
+  max-width: 220px;
+}
+
+/* --- Columna derecha: copy + tags --- */
+
+.products-intro__lead {
+  color: var(--color-ink-muted);
+  max-width: 56ch;
+  margin-block: var(--space-2) var(--space-3);
+}
+
+.products-intro__help-label {
+  font-weight: 500;
+  color: var(--color-forest-900);
+  margin-bottom: var(--space-1);
+}
+
+.products-intro__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.products-intro__tags li {
+  background: var(--color-cream-100);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 1rem;
+  font-size: 0.88rem;
+  color: var(--color-forest-900);
+}
+
+@media (max-width: 760px) {
+  .products-intro__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .products-intro__lead {
+    margin-inline: auto;
+  }
+
+  .products-intro__help-label {
+    margin-top: var(--space-1);
+  }
+
+  .products-intro__tags {
+    justify-content: center;
+  }
+}

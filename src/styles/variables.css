@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Esencias Naturales — Design tokens
+   Extraídos de la referencia visual: verde bosque + crema + lavanda + ciruela
+   ========================================================================== */
+
+:root {
+  /* --- Color: base --- */
+  --color-forest-900: #16352b;   /* header/footer, texto fuerte */
+  --color-forest-700: #1b4d3e;   /* verde principal de marca */
+  --color-forest-500: #2f6a56;   /* hover / estados */
+  --color-forest-100: #dfe8e0;   /* fondos suaves en verde */
+
+  --color-plum-700: #6f3268;     /* botón / acento secundario oscuro */
+  --color-plum-500: #8b3f82;     /* acento secundario (íconos, botón) */
+  --color-plum-100: #f1e2ef;     /* fondo suave en ciruela */
+
+  --color-lavender-500: #c9aed4; /* forma decorativa del hero */
+  --color-lavender-100: #e9ddec;
+
+  --color-cream-100: #faf7ef;
+  --color-cream-300: #f4efe2;    /* fondo principal de la marca */
+  --color-sage-200: #e6e9de;     /* fondo alterno de sección */
+
+  --color-ink: #262620;          /* texto principal sobre crema */
+  --color-ink-muted: #5c5b50;    /* texto secundario */
+  --color-ink-inverse: #f4efe2;  /* texto sobre fondo verde */
+  --color-ink-inverse-muted: #c7d3cb;
+
+  --color-border: rgba(27, 77, 62, 0.14);
+
+  /* --- Typography --- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Jost", "Segoe UI", sans-serif;
+
+  --fs-h1: clamp(2.25rem, 1.7rem + 2.4vw, 3.4rem);
+  --fs-h2: clamp(1.65rem, 1.4rem + 1.1vw, 2.25rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.8rem;
+
+  /* --- Layout --- */
+  --content-max: 1180px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 12px 32px rgba(22, 53, 43, 0.1);
+}

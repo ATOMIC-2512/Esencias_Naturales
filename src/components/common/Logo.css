@@ -1,0 +1,42 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.logo__mark {
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask: url("/images/logo-lotus.png") center / contain no-repeat;
+  mask: url("/images/logo-lotus.png") center / contain no-repeat;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.logo__name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.logo__tagline {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+
+.logo--light {
+  color: var(--color-cream-100);
+}
+
+.logo--dark {
+  color: var(--color-forest-900);
+}

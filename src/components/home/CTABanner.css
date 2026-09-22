@@ -1,0 +1,58 @@
+.cta-banner {
+  background: var(--color-forest-700);
+  color: var(--color-ink-inverse);
+}
+
+.cta-banner__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  padding-block: var(--space-5);
+}
+
+.cta-banner__copy h2 {
+  color: var(--color-ink-inverse);
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-2);
+}
+
+.cta-banner__copy p {
+  color: var(--color-ink-inverse-muted);
+  max-width: 42ch;
+  margin-bottom: var(--space-3);
+}
+
+.cta-banner__badges {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.cta-banner__badges li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  max-width: 120px;
+  font-size: 0.8rem;
+  color: var(--color-ink-inverse-muted);
+}
+
+.cta-banner__badges svg {
+  color: var(--color-lavender-500);
+}
+
+@media (max-width: 760px) {
+  .cta-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-banner__badges {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

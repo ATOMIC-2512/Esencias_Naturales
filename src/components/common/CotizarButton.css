@@ -1,0 +1,92 @@
+.cotizar-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.cotizar-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(22, 53, 43, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3);
+  z-index: 100;
+}
+
+.cotizar-modal {
+  position: relative;
+  background: var(--color-cream-100);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  max-width: 380px;
+  width: 100%;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.cotizar-modal h3 {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-1);
+  padding-right: var(--space-3);
+}
+
+.cotizar-modal > p {
+  color: var(--color-ink-muted);
+  font-size: var(--fs-small);
+  margin-bottom: var(--space-3);
+}
+
+.cotizar-modal__close {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background: transparent;
+  border: none;
+  color: var(--color-ink-muted);
+  padding: 0.25rem;
+  line-height: 0;
+}
+
+.cotizar-modal__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.cotizar-modal__option {
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #0b2c1a;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebd58;
+}
+
+.cotizar-modal__phone {
+  margin-top: var(--space-2) !important;
+  font-size: 0.8rem !important;
+  color: var(--color-ink-muted);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cotizar-modal {
+    animation: cotizar-pop 0.18s ease;
+  }
+}
+
+@keyframes cotizar-pop {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
